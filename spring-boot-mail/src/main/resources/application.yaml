@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: spirng-boot-mail
+  mail:
+    default-encoding: UTF-8
+    host: smtp.163.com
+    password: xxx
+    username: quanzaiyu@163.com

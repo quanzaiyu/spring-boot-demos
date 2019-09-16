@@ -2,4 +2,4 @@
 
 - [spring-boot-hello]()
 - [spring-boot-banner]()
-
+- [spring-boot-mail]()

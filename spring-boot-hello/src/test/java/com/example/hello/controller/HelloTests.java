@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.hello.controller;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -18,7 +18,6 @@ public class HelloTests {
     @Test
     public void contextLoads() {
     }
-
 
     private MockMvc mvc;
     @Before
