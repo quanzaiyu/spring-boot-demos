@@ -1,4 +1,4 @@
-package com.example.web.controller;
+package com.example.hello.controller;
 
 import com.example.web.configuration.Result;
 import com.example.web.model.Person;

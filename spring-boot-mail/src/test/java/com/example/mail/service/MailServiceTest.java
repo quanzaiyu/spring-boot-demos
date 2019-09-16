@@ -1,4 +1,4 @@
-package com.example.mail.mail.service;
+package com.example.mail.service;
 
 import com.example.mail.service.MailService;
 import org.junit.Test;
