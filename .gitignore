@@ -29,3 +29,7 @@ build/
 
 ### VS Code ###
 .vscode/
+spring-boot-hello/src/main/resources/static/
+spring-boot-hello/src/main/resources/templates/
+spring-boot-http/src/main/resources/static/
+spring-boot-http/src/main/resources/templates/
