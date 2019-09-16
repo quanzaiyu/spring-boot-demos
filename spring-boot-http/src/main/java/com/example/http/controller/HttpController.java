@@ -11,10 +11,8 @@ public class HttpController {
     @Resource
     private HttpAPIService httpAPIService;
 
-    @RequestMapping("")
+    @RequestMapping("http")
     public String index() throws Exception {
-        String str = httpAPIService.doGet("https://www.baidu.com");
-        System.out.println(str);
-        return str;
+        return httpAPIService.doGet("https://www.baidu.com");
     }
 }
