@@ -1,4 +1,4 @@
-package com.example.banner.controller;
+package com.example.banner;
 
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

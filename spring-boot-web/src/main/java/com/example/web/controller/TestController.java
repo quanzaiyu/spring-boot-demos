@@ -1,15 +1,10 @@
-package com.example.hello.controller;
+package com.example.web.controller;
 
 import com.example.web.configuration.Result;
 import com.example.web.model.Person;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
-import java.text.DateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 @RestController
 @RequestMapping(value="test", produces="application/json; charset=utf-8")

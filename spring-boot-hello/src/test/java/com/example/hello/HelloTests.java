@@ -1,5 +1,6 @@
-package com.example.hello.controller;
+package com.example.hello;
 
+import com.example.hello.controller.HelloController;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
