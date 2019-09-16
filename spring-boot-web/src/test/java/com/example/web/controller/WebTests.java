@@ -15,10 +15,6 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class WebTests {
-    @Test
-    public void contextLoads() {
-    }
-
     private MockMvc mvc;
     @Before
     public void setUp() throws Exception {
