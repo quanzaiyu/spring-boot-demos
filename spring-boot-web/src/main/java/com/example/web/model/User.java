@@ -1,4 +1,4 @@
-package com.example.thymeleaf.model;
+package com.example.web.model;
 
 import lombok.Data;
 
