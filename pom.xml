@@ -28,6 +28,7 @@
         <module>spring-boot-web</module>
         <module>spring-boot-crontab</module>
         <module>spring-boot-http</module>
+        <module>spring-boot-thymeleaf</module>
     </modules>
 
     <dependencies>
