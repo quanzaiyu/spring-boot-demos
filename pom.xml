@@ -30,6 +30,7 @@
         <module>spring-boot-http</module>
         <module>spring-boot-thymeleaf</module>
         <module>spring-boot-redis</module>
+        <module>spring-boot-webjars</module>
     </modules>
 
     <dependencies>

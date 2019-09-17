@@ -6,4 +6,6 @@
 - [spring-boot-web]() Web开发
 - [spring-boot-crontab]() 定时任务
 - [spring-boot-thymeleaf]() 模板引擎
+- [spring-boot-http]() HttpClient
+- [spring-boot-redis]() Redis
 
