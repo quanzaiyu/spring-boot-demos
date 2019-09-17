@@ -1,18 +1,16 @@
-package com.example.web.model;
+package com.example.redis.model;
 
-import lombok.Data;
+import lombok.*;
+
+import java.io.Serializable;
 
 @Data
-public class User {
+@NoArgsConstructor
+@AllArgsConstructor
+public class User implements Serializable {
     private String name;
     private int age;
     private String pass;
-
-    public User(String name, int age, String pass) {
-        this.name = name;
-        this.age = age;
-        this.pass = pass;
-    }
 
     @Override
     public String toString() {

@@ -1,18 +1,13 @@
 package com.example.web.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Person {
     String userName;
     String userAge;
     String userAddress;
-
-    public Person(String userName, String userAge, String userAddress) {
-        this.userName = userName;
-        this.userAge = userAge;
-        this.userAddress = userAddress;
-    }
 }
