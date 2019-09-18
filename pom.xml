@@ -32,6 +32,8 @@
         <module>spring-boot-redis</module>
         <module>spring-boot-webjars</module>
         <module>spring-boot-jpa</module>
+        <module>spring-boot-mybatis</module>
+        <module>spring-boot-mybatis-xml</module>
     </modules>
 
     <dependencies>

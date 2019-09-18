@@ -9,4 +9,6 @@
 - [spring-boot-http]() 整合 HttpClient
 - [spring-boot-redis]() 整合 Redis
 - [spring-boot-jpa]() 整合 Jpa
+- [spring-boot-mybatis]() 整合 MyBatis (注解版)
+- [spring-boot-mybatis-xml]() 整合 MyBatis (XML版)
 
