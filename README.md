@@ -11,4 +11,5 @@
 - [spring-boot-jpa]() 整合 Jpa
 - [spring-boot-mybatis]() 整合 MyBatis (注解版)
 - [spring-boot-mybatis-xml]() 整合 MyBatis (XML版)
+- [spring-boot-mybatis-muti-datasource]() MyBatis 多数据源版
 
