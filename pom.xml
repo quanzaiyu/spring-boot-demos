@@ -35,6 +35,7 @@
         <module>spring-boot-mybatis</module>
         <module>spring-boot-mybatis-xml</module>
         <module>spring-boot-mybatis-muti-datasource</module>
+        <module>spring-boot-mybatis-muti-datasource-xml</module>
     </modules>
 
     <dependencies>
