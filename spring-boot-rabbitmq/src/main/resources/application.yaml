@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: Spring-boot-rabbitmq
+  rabbitmq:
+    host: 127.0.0.1
+    username: mytest
+    password: mytest
+    port: 5672
