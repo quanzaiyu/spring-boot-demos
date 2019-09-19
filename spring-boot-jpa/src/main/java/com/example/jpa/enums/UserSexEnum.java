@@ -1,4 +1,6 @@
 package com.example.jpa.enums;
 
-public class UserSexEnum {
+public enum UserSexEnum {
+    MAN, WOMAN
 }
+

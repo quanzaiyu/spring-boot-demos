@@ -1,5 +1,6 @@
 package com.example.jpa.model;
 
+import com.example.jpa.enums.UserSexEnum;
 import lombok.*;
 
 import javax.persistence.*;
@@ -22,20 +23,18 @@ public class User implements Serializable {
     @Column(nullable = false)
     private String passWord;
 
-    @Column(nullable = false, unique = true)
-    private String email;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = true)
+    private UserSexEnum userSex;
 
-    @Column(nullable = true, unique = true)
+    @Column(nullable = false, unique = true)
     private String nickName;
 
-    @Column(nullable = false)
-    private String regTime;
-
-    public User(String userName, String passWord, String email, String nickName, String regTime) {
-        this.userName = userName;
+    public User(String userName, String passWord, UserSexEnum userSex, String nickName) {
+        super();
         this.passWord = passWord;
-        this.email = email;
+        this.userName = userName;
+        this.userSex = userSex;
         this.nickName = nickName;
-        this.regTime = regTime;
     }
 }

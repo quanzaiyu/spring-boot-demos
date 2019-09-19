@@ -1,5 +1,6 @@
 package com.example.jpa;
 
+import com.example.jpa.enums.UserSexEnum;
 import com.example.jpa.model.User;
 import com.example.jpa.repository.UserRepository;
 import org.junit.Assert;
@@ -21,17 +22,18 @@ public class UserRepositoryTests {
 
     @Test
     public void test() throws Exception {
-//        Date date = new Date();
-//        DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG);
-//        String formattedDate = dateFormat.format(date);
+//        // 添加
+//        userRepository.save(new User("xiaoyu", "123456", UserSexEnum.MAN, "xiaoxiaoyu"));
 //
-//        userRepository.save(new User("aa", "aa123456", "aa@126.com", "aa", formattedDate));
-//        userRepository.save(new User("bb", "bb123456", "bb@126.com", "bb", formattedDate));
-//        userRepository.save(new User("cc", "cc123456", "cc@126.com", "cc", formattedDate));
+//        // 删除
+//        userRepository.delete(userRepository.findByUserName("aa1"));
 //
-//        Assert.assertEquals(3, userRepository.findAll().size());
-//        Assert.assertEquals("bb", userRepository.findByUserNameOrEmail("bb", "bb@126.com").getNickName());
-//        userRepository.delete(userRepository.findByUserName("aa"));
+//        // 查询
+//        String name = userRepository.findByUserNameOrNickName("", "xiaoxiaoyu").getNickName();
+//        System.out.println(name);
+//
+//        // 长度
+//        System.out.println(userRepository.findAll().size());
     }
 
 }
