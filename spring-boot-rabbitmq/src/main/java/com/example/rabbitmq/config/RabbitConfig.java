@@ -20,4 +20,9 @@ public class RabbitConfig {
     public Queue many2manyQueue() {
         return new Queue("many2many");
     }
+
+    @Bean
+    public Queue objectQueue() {
+        return new Queue("object");
+    }
 }
