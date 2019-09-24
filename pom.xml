@@ -32,10 +32,11 @@
         <module>spring-boot-redis</module>
         <module>spring-boot-webjars</module>
         <module>spring-boot-jpa</module>
+        <module>spring-boot-jpa-multi-datasource</module>
         <module>spring-boot-mybatis</module>
         <module>spring-boot-mybatis-xml</module>
-        <module>spring-boot-mybatis-muti-datasource</module>
-        <module>spring-boot-mybatis-muti-datasource-xml</module>
+        <module>spring-boot-mybatis-multi-datasource</module>
+        <module>spring-boot-mybatis-multi-datasource-xml</module>
         <module>spring-boot-rabbitmq</module>
     </modules>
 
