@@ -38,6 +38,8 @@
         <module>spring-boot-mybatis-multi-datasource</module>
         <module>spring-boot-mybatis-multi-datasource-xml</module>
         <module>spring-boot-rabbitmq</module>
+        <module>spring-boot-webflux</module>
+        <module>spring-boot-jwt</module>
     </modules>
 
     <dependencies>
