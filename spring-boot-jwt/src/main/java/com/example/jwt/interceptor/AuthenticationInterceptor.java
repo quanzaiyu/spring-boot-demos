@@ -24,38 +24,39 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
     
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object object) throws Exception {
-        String token = httpServletRequest.getHeader("token");// 从 http 请求头中取出 token
+        String token = httpServletRequest.getHeader("Authorization");// 从 http 请求头中取出 token
         // 如果不是映射到方法直接通过
         if(!(object instanceof HandlerMethod)){
             return true;
         }
-        HandlerMethod handlerMethod=(HandlerMethod)object;
-        Method method=handlerMethod.getMethod();
-        //检查是否有WithoutToken注释，有则跳过认证
+        HandlerMethod handlerMethod = (HandlerMethod)object;
+        Method method = handlerMethod.getMethod();
+        // 检查是否有WithoutToken注释，有则跳过认证
         if (method.isAnnotationPresent(WithoutToken.class)) {
             WithoutToken WithoutToken = method.getAnnotation(WithoutToken.class);
             if (WithoutToken.required()) {
                 return true;
             }
         }
-        //检查有没有需要用户权限的注解
+
+        // 检查有没有需要用户权限的注解
         if (method.isAnnotationPresent(WithToken.class)) {
             WithToken WithToken = method.getAnnotation(WithToken.class);
             if (WithToken.required()) {
                 // 执行认证
                 if (token == null) {
-                    throw new RuntimeException("无token，请重新登录");
+                    throw new RuntimeException("请携带token访问");
                 }
                 // 获取 token 中的 user id
                 String userId;
                 try {
                     userId = JWT.decode(token).getAudience().get(0);
                 } catch (JWTDecodeException j) {
-                    throw new RuntimeException("401");
+                    throw new RuntimeException("401 授权失败");
                 }
                 User user = userService.findUserById(userId);
                 if (user == null) {
-                    throw new RuntimeException("用户不存在，请重新登录");
+                    throw new RuntimeException("用户不存在");
                 }
                 // 验证 token
                 JWTVerifier jwtVerifier = JWT.require(Algorithm.HMAC256(user.getPassword())).build();
@@ -67,6 +68,7 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
                 return true;
             }
         }
+        // 默认不需要携带token
         return true;
     }
 

@@ -40,8 +40,8 @@ public class UserController {
     }
 
     @WithToken
-    @GetMapping("/getMessage")
-    public String getMessage(){
+    @GetMapping("/msg")
+    public String getMsg(){
         return "你已通过验证";
     }
 }
