@@ -15,3 +15,6 @@
 - [spring-boot-mybatis-multi-datasource]() MyBatis 多数据源 (注解版)
 - [spring-boot-mybatis-multi-datasource-xml]() MyBatis 多数据源 (XML版)
 - [spring-boot-webflux]() 整合 webflux
+- [spring-boot-jwt]() 整合 jwt (Java Web Token)
+
+
