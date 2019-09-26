@@ -40,6 +40,9 @@
         <module>spring-boot-rabbitmq</module>
         <module>spring-boot-webflux</module>
         <module>spring-boot-jwt</module>
+        <module>spring-boot-sso/spring-boot-sso-server</module>
+        <module>spring-boot-sso/spring-boot-sso-client-token</module>
+        <module>spring-boot-sso/spring-boot-sso-client-cookie</module>
     </modules>
 
     <dependencies>

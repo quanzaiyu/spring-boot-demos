@@ -17,4 +17,10 @@
 - [spring-boot-webflux]() 整合 webflux
 - [spring-boot-jwt]() 整合 jwt (Java Web Token)
 
+---
 
+单点登录 (Todo)
+
+- [spring-boot-sso-server]()
+- [spring-boot-sso-client-token]()
+- [spring-boot-sso-client-cookie]()
