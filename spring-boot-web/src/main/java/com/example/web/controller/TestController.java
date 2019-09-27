@@ -4,6 +4,7 @@ import com.example.web.configuration.Result;
 import com.example.web.model.Person;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -12,7 +13,7 @@ public class TestController {
     // 字符串格式输出
     @RequestMapping("hello")
     public String hello() {
-        return "Hello World";
+        return "Hello World ...";
     }
 
     // json格式输出
@@ -33,6 +34,12 @@ public class TestController {
     @RequestMapping("test")
     public Result test(){
         return Result.ok("ok");
+    }
+
+    // 字符串格式输出
+    @RequestMapping("error")
+    public void error() {
+        throw new Error("错误");
     }
 
 }
