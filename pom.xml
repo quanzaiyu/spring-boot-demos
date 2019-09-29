@@ -22,42 +22,41 @@
     </properties>
 
     <modules>
-        <module>spring-boot-hello</module>
-        <module>spring-boot-banner</module>
-        <module>spring-boot-mail</module>
-        <module>spring-boot-web</module>
-        <module>spring-boot-crontab</module>
-        <module>spring-boot-http</module>
-        <module>spring-boot-thymeleaf</module>
-        <module>spring-boot-redis</module>
-        <module>spring-boot-webjars</module>
-        <module>spring-boot-jpa</module>
-        <module>spring-boot-jpa-multi-datasource</module>
-        <module>spring-boot-mybatis</module>
-        <module>spring-boot-mybatis-xml</module>
-        <module>spring-boot-mybatis-multi-datasource</module>
-        <module>spring-boot-mybatis-multi-datasource-xml</module>
-        <module>spring-boot-rabbitmq</module>
-        <module>spring-boot-webflux</module>
-        <module>spring-boot-jwt</module>
-        <module>spring-boot-sso/spring-boot-sso-server</module>
-        <module>spring-boot-sso/spring-boot-sso-client-token</module>
-        <module>spring-boot-sso/spring-boot-sso-client-cookie</module>
-        <module>spring-boot-admin</module>
-        <module>spring-boot-websocket</module>
+        <module>projects/spring-boot-hello</module>
+        <module>projects/spring-boot-banner</module>
+        <module>projects/spring-boot-mail</module>
+        <module>projects/spring-boot-web</module>
+        <module>projects/spring-boot-crontab</module>
+        <module>projects/spring-boot-http</module>
+        <module>projects/spring-boot-thymeleaf</module>
+        <module>projects/spring-boot-redis</module>
+        <module>projects/spring-boot-webjars</module>
+        <module>projects/spring-boot-jpa</module>
+        <module>projects/spring-boot-mybatis</module>
+        <module>projects/spring-boot-rabbitmq</module>
+        <module>projects/spring-boot-webflux</module>
+        <module>projects/spring-boot-jwt</module>
+        <module>projects/spring-boot-sso/spring-boot-sso-server</module>
+        <module>projects/spring-boot-sso/spring-boot-sso-client-token</module>
+        <module>projects/spring-boot-sso/spring-boot-sso-client-cookie</module>
+        <module>projects/spring-boot-admin</module>
+        <module>projects/spring-boot-websocket</module>
     </modules>
 
     <dependencies>
         <!-- springframework -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>2.1.8.RELEASE</version>
-            <scope>compile</scope>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
             <version>2.1.8.RELEASE</version>
             <scope>compile</scope>
         </dependency>
