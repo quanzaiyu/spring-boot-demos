@@ -22,7 +22,7 @@ public class CheckCenterController {
         return "socket";
     }
 
-    // 推送数据接口
+    // 单发
     @ResponseBody
     @RequestMapping("/socket/push/{from}/{to}")
     public Result pushToOne(@PathVariable String from, @PathVariable String to, String message) {
@@ -36,7 +36,7 @@ public class CheckCenterController {
         return Result.ok("发送成功");
     }
 
-    // 推送数据接口
+    // 群发
     @ResponseBody
     @RequestMapping("/socket/push/{from}")
     public Result pushToAll(@PathVariable String from, String message) {

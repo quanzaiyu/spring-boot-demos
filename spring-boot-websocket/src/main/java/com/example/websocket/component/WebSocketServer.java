@@ -110,7 +110,7 @@ public class WebSocketServer {
     }
 
     /**
-     * 群发自定义消息
+     * 群发/单发自定义消息
      * */
     public static void send(String message, @PathParam("from") String from, @PathParam("to") String to) throws IOException {
         log.info(from + "发送给" + to + ", 内容: " + message);
