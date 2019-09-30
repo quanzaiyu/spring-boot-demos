@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>服务器时间</title>
+  <style>
+    .el-row {
+      margin-bottom: 20px;
+    }
+
+    .el-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .sysFile {
+      margin-bottom: 5px;
+    }
+
+    .sysFile:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <h2>当前时间: {{time}}</h2>
+</div>
+</body>
+<script src="js/sockjs.min.js"></script>
+<script src="js/stomp.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.5.21/vue.min.js"></script>
+<script>
+  const wsHost = "/notification";
+  const wsTopic = "/topic/enter";
+
+  const app = new Vue({
+    el: "#app",
+    data: function () {
+      return {
+        time: ''
+      }
+    },
+    methods: {
+      _initSockJs() {
+        this.socket = new SockJS(wsHost);
+        this.stompClient = Stomp.over(this.socket);
+
+        this.stompClient.connect({}, (frame) => {
+          console.log("websocket连接成功:" + frame);
+          // 接收消息
+          this.stompClient.subscribe(wsTopic, (response) => {
+            this.time = response.body;
+          });
+        });
+      },
+      _destroySockJs() {
+        if (this.stompClient != null) {
+          this.stompClient.disconnect();
+          this.socket.close();
+          this.stompClient = {};
+          this.socket = {};
+        }
+        console.log("websocket断开成功！");
+      }
+    },
+    mounted() {
+      this._initSockJs();
+    },
+    beforeDestroy() {
+      this._destroySockJs();
+    }
+  })
+</script>
+</html>

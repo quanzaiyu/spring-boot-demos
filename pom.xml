@@ -41,7 +41,6 @@
         <module>spring-boot-sso/spring-boot-sso-client-cookie</module>
         <module>spring-boot-admin</module>
         <module>spring-boot-websocket</module>
-        <module>spring-boot-websocket-task</module>
     </modules>
 
     <dependencies>
@@ -70,8 +69,8 @@
         </dependency>
         <dependency>
             <groupId>cn.hutool</groupId>
-            <artifactId>hutool-log</artifactId>
-            <version>4.1.17</version>
+            <artifactId>hutool-all</artifactId>
+            <version>4.6.5</version>
         </dependency>
 
         <!-- 数据库 -->

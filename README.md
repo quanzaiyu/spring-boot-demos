@@ -40,7 +40,8 @@ MyBatis
 
 WebSocket
 
-- [spring-boot-websocket]() 整合 websocket  -> 8100
+- [spring-boot-websocket-simple]() 整合 websocket, 聊天室示例  -> 8100
+- [spring-boot-websocket-task]() 整合 websocket, 定时任务推送  -> 8101
 
 ---
 

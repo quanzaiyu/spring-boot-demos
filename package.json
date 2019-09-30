@@ -1,6 +1,6 @@
 {
   "name": "spring-boot-demos",
-  "version": "v0.0.47",
+  "version": "v0.0.48",
   "private": true,
   "scripts": {
     "push": "node deploy/deploy.js"
