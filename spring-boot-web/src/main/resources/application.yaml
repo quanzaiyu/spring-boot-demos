@@ -1,0 +1,6 @@
+server:
+  port: 8000 #端口配置
+spring:
+  application:
+    admin:
+      enabled: true
