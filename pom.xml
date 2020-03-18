@@ -41,6 +41,7 @@
         <module>spring-boot-sso/spring-boot-sso-client-cookie</module>
         <module>spring-boot-admin</module>
         <module>spring-boot-websocket</module>
+        <module>test</module>
     </modules>
 
     <dependencies>
