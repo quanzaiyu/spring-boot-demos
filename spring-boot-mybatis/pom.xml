@@ -18,31 +18,5 @@
     </modules>
 
     <dependencies>
-        <!-- JDBC -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>5.1.9.RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <!-- MyBatis -->
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.5.1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis-spring</artifactId>
-            <version>2.0.1</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
 </project>
